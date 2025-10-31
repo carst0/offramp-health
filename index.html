@@ -1,99 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Offramp Health | Your Path to Sustainable Wellness</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- The original site uses a custom font, likely a variant of Inter or a similar sans-serif. 
-         For now, we'll use a common web-safe font and will try to identify the exact font later 
-         or use a close Google Font. -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
-</head>
-<body>
-    <!-- Header/Navigation -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <!-- Placeholder for the logo image -->
-                <img src="logo.png" alt="Offramp Health Logo">
-            </a>
-            <nav class="nav-links">
-                <a href="#how-it-works">How It Works</a>
-                <a href="#pricing">Pricing</a>
-                <!-- Gifts and Blog links are kept for visual fidelity but will link to # for now -->
-                <a href="#">Gifts</a>
-                <a href="#">Blog</a>
-            </nav>
-            <div class="nav-actions">
-                <button class="btn btn-login">Login</button>
-                <a href="https://www.trainwithkickoff.com/client-sign-up?questionId=219" class="btn btn-primary">Find Your Coach &rarr;</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <!-- Background image will be set via CSS -->
-            <div class="hero-text">
-                <h1>
-                    Sustain Your Success. <br>
-                    Find Your Offramp to Health.
-                </h1>
-                <p>
-                    You've achieved your weight loss goals. Now, transition to a healthier, sustainable lifestyle with 1-on-1 personal training and nutrition guidance.
-                </p>
-                <div class="hero-cta">
-                    <!-- The original site has a dropdown and a button. We'll simplify the dropdown for now 
-                         and focus on the main CTA button. -->
-                    <a href="https://www.trainwithkickoff.com/client-sign-up?questionId=219" class="btn btn-primary btn-large">Find Your Coach &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust Badges/Logos Section -->
-    <section class="trust-badges">
-        <div class="container">
-            <!-- Placeholder for logos - will use the same image names as the original site -->
-            <img src="nyt_logo.png" alt="The New York Times">
-            <img src="parade_logo.png" alt="Parade">
-            <img src="bustle_logo.png" alt="Bustle">
-            <img src="askmen_logo.png" alt="AskMen">
-            <img src="goop_logo.png" alt="Goop">
-        </div>
-    </section>
-
-    <!-- Main Content Sections will be added in the next steps -->
-    <section id="how-it-works" class="how-it-works">
-        <!-- Content for How It Works -->
-    </section>
-
-    <section id="pricing" class="pricing">
-        <!-- Content for Pricing -->
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <!-- Footer content will be added later -->
-    </footer>
-
-    <script>
-        // Simple smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
+    <meta name="description" content="You've lost the weight. Now find your offramp. Transition to a healthier, sustainable lifestyle with 1-on-1 personal training and nutrition guidance." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
