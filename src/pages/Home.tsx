@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ChevronDown, Star } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -27,7 +26,7 @@ export default function Home() {
     if (!window.dataLayer) {
       window.dataLayer = [];
     }
-    function gtag(...args: any[]) {
+    function gtag(..._args: any[]) {
       if (window.dataLayer) {
         window.dataLayer.push(arguments);
       }
