@@ -137,7 +137,7 @@ export default function Home() {
               <img
                 src="/logo.png"
                 alt="Offramp Health"
-                className="h-8 md:h-12 w-auto"
+                className="h-10 sm:h-12 md:h-14 w-auto max-w-[200px] sm:max-w-none"
               />
             </a>
 
