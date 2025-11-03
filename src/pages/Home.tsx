@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { ChevronDown, Star } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 declare global {
   interface Window {
@@ -11,30 +11,6 @@ declare global {
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("monthly");
-
-  // Initialize Google Analytics and track button clicks
-  useEffect(() => {
-    // Load Google Analytics script
-    const measurementId = import.meta.env.VITE_GOOGLE_ANALYTICS_ID;
-    if (!measurementId) return;
-
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
-    document.head.appendChild(script);
-
-    if (!window.dataLayer) {
-      window.dataLayer = [];
-    }
-    function gtag(..._args: any[]) {
-      if (window.dataLayer) {
-        window.dataLayer.push(arguments);
-      }
-    }
-    window.gtag = gtag;
-    gtag("js", new Date());
-    gtag("config", measurementId);
-  }, []);
 
   // Function to track button clicks
   const trackButtonClick = (buttonLocation: string) => {
