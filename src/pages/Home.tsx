@@ -14,11 +14,15 @@ export default function Home() {
 
   // Function to track button clicks
   const trackButtonClick = (buttonLocation: string) => {
+    console.log('Button clicked:', buttonLocation); // Debug log
     if (window.gtag) {
       window.gtag("event", "find_your_coach_click", {
         button_location: buttonLocation,
         timestamp: new Date().toISOString(),
       });
+      console.log('Event sent to Google Analytics'); // Debug log
+    } else {
+      console.warn('Google Analytics not loaded yet'); // Debug log
     }
   };
 
